@@ -73,13 +73,6 @@ When launching a training, a link will be printed in the console. Click on it to
  by setting the `WANDB_API_KEY` environment variable. If not, it will create an anonymous run which is automatically deleted after 7 days.
 
 
-## Pretrained model
-A [pretrained model](https://github.com/milesial/Pytorch-UNet/releases/tag/v3.0) is available for the Carvana dataset. It can also be loaded from torch.hub:
-
-```python
-net = torch.hub.load('milesial/Pytorch-UNet', 'unet_carvana', pretrained=True, scale=0.5)
-```
-Available scales are 0.5 and 1.0.
 
 ## Data
 There are 4 bands as the input channels 1 output class. They are normalized and cut into 400 256*256 tiles.
